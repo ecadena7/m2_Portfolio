@@ -1,33 +1,49 @@
 * {
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 0;
-  }
-  
-  header {
+}
+
+header {
     padding: 40px;
     text-align: center;
-    background: #13293d;
+    background: #56a4ed;
     color: #fff;
-  }
-  
-  nav {
-    display: flex;
-    background-color: #d8a47f;
-  }
+}
 
-  aside {
+
+
+nav {
+    display: flex;
+    background-color: #f1d65d;
+}
+
+nav ul li {
+    text-decoration: none;
+}
+
+aside {
     flex: 1;
     background-color: #b9c6ae;
     padding: 20px;
-  }
+}
 
-  footer {
+footer {
     padding: 20px;
     text-align: center;
     background: #13293d;
     color: #fff;
-  }
+}
+
+@media screen and (max-width: 768px) {
+    main, nav {
+        flex-direction: column;
+    }
+
+    aside {
+        order: 2;
+    }
+}
